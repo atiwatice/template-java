@@ -1,0 +1,40 @@
+<beanio xmlns="http://www.beanio.org/2012/03">
+
+	<stream name="InvoiceAttachment" format="csv" minOccurs="0"
+		maxOccurs="1">
+		<parser>
+
+			<property name="alwaysQuote" value="true" />
+		</parser>
+		<record name="headers" minOccurs="1" maxOccurs="1">
+			<field name="recordColumn1" default="Buyer Code" />
+			<field name="recordColumn2" default="Vendor Code" />
+			<field name="recordColumn3" default="FI Doc No." />
+			<field name="recordColumn4" default="Blockchain Payment Ref." />
+			<field name="recordColumn5" default="Invoice Amount" />
+			<field name="recordColumn6" default="VAT Amount" />
+			<field name="recordColumn7" default="WHT Flag" />
+			<field name="recordColumn8" default="WHT Amount" />
+			<field name="recordColumn9" default="Business Place" />
+			<field name="recordColumn10" default="Payment Date" />
+			<field name="recordColumn11" default="Net Payment Amount" />
+			<field name="recordColumn12" default="Reason" />
+		</record>
+		<record name="InvoiceAttachmentModel" minOccurs="0"
+			maxOccurs="unbounded" class="com.example.beanio.EmailInvoiceAttachmentModel">
+			<field name="buyerCode" />
+			<field name="vendorCode" />
+			<field name="fiDocNo" />
+			<field name="blockchainPaymentRef" />
+			<field name="invoiceAmount" />
+			<field name="vatAmount" />
+			<field name="whtFlag" />
+			<field name="whtAmount" />
+			<field name="businessPlace" />
+			<field name="paymentDate" />
+			<field name="netPaymentAmount" />
+			<field name="reason" />
+		</record>
+	</stream>
+
+</beanio>

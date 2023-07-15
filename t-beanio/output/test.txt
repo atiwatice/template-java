@@ -1,0 +1,2 @@
+"Buyer Code","Vendor Code","FI Doc No.","Blockchain Payment Ref.","Invoice Amount","VAT Amount","WHT Flag","WHT Amount","Business Place","Payment Date","Net Payment Amount","Reason"
+"2000058557","1150","","","","","N","0.00","0585","","","Duplicate error"
